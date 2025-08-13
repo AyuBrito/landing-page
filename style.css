@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: hsl(257, 40%, 49%) url(images/bg-desktop.svg);
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: start;
+  padding: 40px 60px;
+}
+
+header img {
+  width: 220px;
+  height: auto;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 60px;
+  padding: 10px 60px;
+}
+
+.main-content {
+  width: 490px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  max-width: 450px;
+}
+
+.main-content h1 {
+  color: white;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-size: xx-large;
+}
+
+.main-content p {
+  color: rgb(240, 240, 240);
+  font-size: medium;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.mockups img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+}
+
+.btn button {
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  border: none;
+  padding: 0.9rem 3rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+footer {
+  padding: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 800px) {
+  body {
+    background: hsl(257, 40%, 49%) url(images/bg-mobile.svg) no-repeat
+      top/contain;
+    text-align: center;
+  }
+
+  header {
+    justify-content: start;
+    padding: 40px;
+  }
+
+  header img {
+    width: 150px;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .mockups img {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .main-content {
+    max-width: 90%;
+  }
+
+  .main-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .main-content p {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}
